@@ -103,6 +103,8 @@ $CC $OPTFLAGS \
     -sFORCE_FILESYSTEM=1 \
     -sEXPORTED_RUNTIME_METHODS='["callMain","FS"]' \
     -sENVIRONMENT='worker,node' \
+    -sMIN_SAFARI_VERSION=120200 \
+    -sLEGACY_VM_SUPPORT=1 \
     -o "$WEBAPP_DIR/eprover.js"
 
 echo ""
